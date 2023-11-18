@@ -1,6 +1,6 @@
 
 FROM adoptopenjdk/openjdk11
-ARG artifact=/home/runner/work/maven-git/maven-git/spring-boot-app/spring-boot-demo-1.0.jar
+ARG artifact=target/spring-boot-web.jar
 WORKDIR /opt/app
 COPY ${artifact} app.jar
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
