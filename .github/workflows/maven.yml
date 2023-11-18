@@ -35,7 +35,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
             name: target
-            path: /home/runner/work/maven-git/maven-git/spring-boot-app/target
+            path: /home/runner/work/maven-git/maven-git/spring-boot-app/
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
