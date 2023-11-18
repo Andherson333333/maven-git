@@ -35,7 +35,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
             name: target
-            path: /spring-boot-app/target
+            path: /home/runner/work/maven-git/maven-git/spring-boot-app/target
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
@@ -67,13 +67,12 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
             name: target
-            path: /spring-boot-app/target
+           # path: /spring-boot-app/target
             
       - name: Verification path
         run: |
          pwd
          ls -las 
-        
             
       - name: Login to Docker Hub
         uses: docker/login-action@v3
