@@ -1,5 +1,5 @@
 
-name: Java CI with Maven and SonarCloud
+name: maven + sonarcloud + docker + kubernetes + argocd
 
 on:
   push:
