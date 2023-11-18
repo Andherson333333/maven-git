@@ -23,6 +23,7 @@ jobs:
       run: |
        cd spring-boot-app
        mvn -B package --file pom.xml
+       ls -las
 
      
 
