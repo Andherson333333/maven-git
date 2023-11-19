@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: andherson1039/maven2:5f3fd73d8d11a091f16bb5608bc7f61a29c75b75
+        image: andherson1039/maven2:c158c165745a7821fc77856e3b822d209b935612
         ports:
