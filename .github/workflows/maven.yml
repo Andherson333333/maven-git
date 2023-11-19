@@ -64,7 +64,7 @@ jobs:
   build-deploy:
     name: Build 
     runs-on: ubuntu-latest
-    # if: ${{ github.event_name == 'push' }}
+    if: ${{ github.event_name == 'push' }}
     needs: build-maven-and-sonarcloud
     steps:
      - name: Checkout
